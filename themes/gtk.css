@@ -49,6 +49,7 @@
   border-color: rgba(255, 255, 255, 0.06);
 }
 .theme-gtk .clipboard-item:hover { background-color: #383838; border-color: rgba(255, 255, 255, 0.12); }
+.theme-gtk .clipboard-item:active { background-color: #444444; border-color: rgba(255, 255, 255, 0.22); }
 .theme-gtk .clipboard-item:focus {
   background-color: #3a3a3a;
   border-color: -st-accent-color;
