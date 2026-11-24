@@ -14,7 +14,7 @@ compile-schemas:
 
 pack: compile-schemas
 	@rm -f $(ZIP_FILE)
-	zip -r $(ZIP_FILE) $(FILES) -x "schemas/gschemas.compiled"
+	zip -r $(ZIP_FILE) $(FILES)
 
 install: compile-schemas
 	@mkdir -p $(INSTALL_DIR)
