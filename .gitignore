@@ -3,9 +3,10 @@
 !.vscode/gnome-css.json
 !.vscode/settings.json
 
-.env
+schemas/gschemas.compiled
+*.zip
+*.bak
+*.tar.gz
+.DS_Store
 .idea
 .venv
-
-dist
-node_modules
