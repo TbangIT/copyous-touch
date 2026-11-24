@@ -1,0 +1,267 @@
+/*
+ * Copious Touch - stylesheet di BASE (struttura e metriche, nessun colore di tema).
+ * I colori vivono in themes/gtk.css e themes/custom.css (caricati da lib/ui/theme.js).
+ * Stile: minimale, compatto, ispirato a GTK4 / libadwaita.
+ */
+
+/* ---------- Cassetto ---------- */
+.clipboard-dialog.modal-dialog {
+  spacing: 0;
+  min-height: 0;
+  border-radius: 14px;
+  padding: 2px 6px 5px 6px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+}
+
+.clipboard-dialog.dock-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top-width: 0;
+}
+
+.clipboard-dialog.dock-bottom {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-width: 0;
+}
+
+/* ---------- Header / footer del cassetto ---------- */
+.clipboard-dialog .dialog-header {
+  padding: 2px 4px 0 4px;
+  margin: 0;
+}
+
+.clipboard-dialog .dialog-header-box { spacing: 4px; }
+.clipboard-dialog .dialog-header-center { spacing: 4px; }
+.clipboard-dialog .dialog-footer { padding: 2px 2px 0 2px; spacing: 4px; }
+
+.clipboard-dialog .dialog-header-icon-button,
+.clipboard-dialog .dialog-footer-icon-button {
+  min-height: 20px;
+  min-width: 20px;
+  padding: 2px 4px;
+  margin: 0 1px;
+  border-radius: 7px;
+  border-width: 1px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.clipboard-dialog .dialog-header-icon-button StIcon,
+.clipboard-dialog .dialog-footer-icon-button StIcon { icon-size: 14px; }
+
+/* ---------- Barra di ricerca ---------- */
+.clipboard-search-entry {
+  min-height: 20px;
+  min-width: 200px;
+  max-width: 340px;
+  border-radius: 999px;
+  border-width: 1px;
+  padding: 0 4px;
+  font-size: 0.85em;
+}
+
+.clipboard-search-entry .search-entry-button {
+  min-height: 16px;
+  min-width: 16px;
+  padding: 1px 4px;
+  margin: 0 1px;
+  border-radius: 999px;
+}
+
+.clipboard-search-entry .search-entry-icon { icon-size: 12px; }
+.clipboard-search-entry .arrow-icon { icon-size: 9px; margin-left: 1px; }
+
+/* ---------- Lista tab ---------- */
+.clipboard-scroll-view { min-height: 0; padding: 0; margin: 0; }
+.clipboard-item-list { spacing: 6px; padding: 0 2px 2px 2px; margin: 0; }
+
+/* ---------- Scheda (tab) ---------- */
+.clipboard-item {
+  border-radius: 12px;
+  border-width: 1px;
+  padding: 5px 8px 6px 8px;
+  margin: 0 2px 2px 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.clipboard-item-box { spacing: 3px; }
+
+.clipboard-item-header { padding-bottom: 2px; spacing: 4px; }
+.clipboard-item-header-icon { icon-size: 14px; }
+.clipboard-item-header-content { spacing: 4px; }
+.clipboard-item-title { font-weight: 700; font-size: 0.86em; }
+
+.clipboard-item-type-badge {
+  font-size: 0.70em;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 1px 5px;
+  margin-left: 3px;
+}
+
+.clipboard-item-header-buttons { spacing: 4px; }
+
+.clipboard-item-header-button {
+  min-height: 20px;
+  min-width: 20px;
+  padding: 2px;
+  border-radius: 6px;
+  border-width: 1px;
+}
+
+.clipboard-item-header-button StIcon { icon-size: 14px; }
+.clipboard-item-tag-button { min-height: 20px; min-width: 20px; padding: 2px; }
+.clipboard-item-tag-button StIcon { icon-size: 14px; }
+.clipboard-item-pinned-indicator { margin-right: 2px; }
+
+.clipboard-item-body { border-radius: 8px; margin-top: 1px; }
+.clipboard-item-content { border-radius: 8px; }
+
+.text-item-content { font-size: 0.88em; line-height: 1.35; padding: 2px 2px 4px 2px; }
+.code-item-content { font-family: monospace; font-size: 0.84em; line-height: 1.35; padding: 2px 2px 4px 2px; }
+.content-preview.text-preview { font-family: monospace; font-size: 0.84em; }
+
+.image-preview { border-radius: 8px; }
+.image-preview .image-box {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  min-height: 0;
+}
+.image-preview.contain .image-box { background-size: contain; }
+
+.file-item-file { font-size: 0.88em; padding: 2px; }
+
+.link-title { font-weight: 700; font-size: 0.90em; }
+.link-description { font-size: 0.80em; }
+.link-url { font-size: 0.80em; }
+.link-url.small { font-size: 0.74em; }
+
+.clipboard-item-badge-overlay { padding: 4px; }
+.clipboard-item-badge {
+  border-radius: 5px;
+  padding: 1px 5px;
+  font-size: 0.70em;
+  font-weight: 600;
+  border-width: 1px;
+}
+
+.status-item { min-width: 260px; padding: 20px; text-align: center; }
+.status-item-title { font-weight: bold; font-size: 1.1em; }
+.status-item-description { font-size: 0.85em; }
+
+/* ---------- Menu a comparsa (menu elemento + menu filtro ricerca) ----------
+ * Struttura GTK4/libadwaita: popover compatto, righe basse, nessuna freccia.
+ * La classe .copious-menu è aggiunta da lib/ui/theme.js a entrambi i menu. */
+.copious-menu.popup-menu-boxpointer {
+  -arrow-border-radius: 0;
+  -arrow-background-color: transparent;
+  -arrow-border-width: 0;
+  -arrow-border-color: transparent;
+  -arrow-base: 0px;
+  -arrow-rise: 0px;
+  -arrow-shadow-color: transparent;
+  -arrow-shadow-radius: 0;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.copious-menu .popup-menu-content {
+  padding: 4px;
+  border-width: 1px;
+  border-radius: 12px;
+  min-width: 170px;
+  max-width: 250px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.copious-menu .popup-menu-item {
+  min-height: 34px;
+  padding: 6px 10px;
+  margin: 1px 0;
+  border-radius: 8px;
+  spacing: 8px;
+  font-size: 0.92em;
+  transition-duration: 60ms;
+}
+
+.copious-menu .popup-menu-item StIcon { icon-size: 14px; }
+.copious-menu .popup-menu-ornament { icon-size: 12px; width: 12px; margin: 0; }
+.copious-menu .popup-menu-arrow { icon-size: 12px; }
+
+.copious-menu .popup-separator-menu-item {
+  min-height: 0;
+  height: 1px;
+  padding: 0;
+  margin: 3px 4px;
+}
+.copious-menu .popup-separator-menu-item .separator,
+.copious-menu .popup-separator-menu-item-separator { height: 1px; margin: 0; }
+
+.copious-menu .popup-sub-menu,
+.copious-menu .clipboard-action-submenu .popup-menu-content {
+  background-color: transparent;
+  border-width: 0;
+  box-shadow: none;
+  padding: 0 0 0 8px;
+  margin: 0;
+}
+
+.copious-menu .toggle-switch { width: 32px; height: 18px; border-radius: 999px; }
+
+/* Riga dei colori (tag): cerchi come il selettore colori GTK4 con zona touch espansa */
+.copious-menu .tags-item {
+  padding: 4px 6px;
+  margin: 2px 0;
+  background-color: transparent;
+}
+.copious-menu .tags-item:hover,
+.copious-menu .tags-item:focus,
+.copious-menu .tags-item:active { background-color: transparent; }
+.tags-box { spacing: 2px; }
+
+.tags-item .tag-button {
+  border-width: 2px;
+  border-color: transparent;
+  border-radius: 8px;
+  padding: 6px 2px;
+  min-height: 30px;
+  margin: 0;
+}
+.tags-item .tag-button:hover,
+.tags-item .tag-button:focus,
+.tags-item .tag-button:active {
+  background-color: rgba(255, 255, 255, 0.10);
+}
+.tags-item .tag-button.checked {
+  border-color: rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.tags-item .tag-button .tag { border-radius: 999px; width: 12px; height: 12px; margin: 0; }
+.tags-item .tag-button.null .tag { background-color: transparent; }
+.tags-item .tag-button.blue .tag { background-color: #3584e4; }
+.tags-item .tag-button.teal .tag { background-color: #2190a4; }
+.tags-item .tag-button.green .tag { background-color: #3a944a; }
+.tags-item .tag-button.yellow .tag { background-color: #c88800; }
+.tags-item .tag-button.orange .tag { background-color: #ed5b00; }
+.tags-item .tag-button.red .tag { background-color: #e62d42; }
+.tags-item .tag-button.pink .tag { background-color: #d56199; }
+.tags-item .tag-button.purple .tag { background-color: #9c3cbe; }
+.tags-item .tag-button.slate .tag { background-color: #6f8396; }
+
+/* Voce "Elimina" */
+.copious-menu .delete-menu-item:hover,
+.copious-menu .delete-menu-item:focus,
+.copious-menu .delete-menu-item:active {
+  background-color: rgba(224, 27, 36, 0.20);
+  color: #ff7b7b;
+}
+
+/* ---------- Indicatore pannello ---------- */
+.copious-indicator-box { spacing: 4px; }
+.copious-indicator-box .copious-indicator-icon { icon-size: 13px; }
+.indicator-label { font-size: 0.9em; }

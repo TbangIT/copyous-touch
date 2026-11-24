@@ -1,0 +1,102 @@
+/* Tema "GTK / Adwaita": palette libadwaita scura, superfici solide. */
+
+.theme-gtk.clipboard-dialog {
+  background-color: #242424;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+/* Pulsanti header/footer */
+.theme-gtk .dialog-header-icon-button,
+.theme-gtk .dialog-footer-icon-button {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.06);
+}
+.theme-gtk .dialog-header-icon-button:hover,
+.theme-gtk .dialog-footer-icon-button:hover { background-color: rgba(255, 255, 255, 0.15); }
+.theme-gtk .dialog-header-icon-button:active,
+.theme-gtk .dialog-footer-icon-button:active { background-color: rgba(255, 255, 255, 0.24); }
+.theme-gtk .dialog-header-icon-button:focus,
+.theme-gtk .dialog-footer-icon-button:focus { border-color: -st-accent-color; }
+.theme-gtk .dialog-header-icon-button:checked,
+.theme-gtk .dialog-footer-icon-button:checked {
+  background-color: -st-accent-color;
+  border-color: -st-accent-color;
+}
+
+/* Ricerca */
+.theme-gtk .clipboard-search-entry {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.10);
+  selection-background-color: -st-accent-color;
+  selected-color: #ffffff;
+}
+.theme-gtk .clipboard-search-entry:focus {
+  border-color: -st-accent-color;
+  box-shadow: inset 0 0 0 1px -st-accent-color;
+}
+.theme-gtk .clipboard-search-entry .search-entry-button { color: #ffffff; background-color: rgba(255, 255, 255, 0.08); }
+.theme-gtk .clipboard-search-entry .search-entry-button:hover { background-color: rgba(255, 255, 255, 0.16); }
+.theme-gtk .clipboard-search-entry .search-entry-button:active { background-color: rgba(255, 255, 255, 0.24); }
+.theme-gtk .clipboard-search-entry .search-entry-button:checked { background-color: -st-accent-color; }
+
+/* Schede */
+.theme-gtk .clipboard-item {
+  color: #ffffff;
+  background-color: #303030;
+  border-color: rgba(255, 255, 255, 0.06);
+}
+.theme-gtk .clipboard-item:hover { background-color: #383838; border-color: rgba(255, 255, 255, 0.12); }
+.theme-gtk .clipboard-item:focus {
+  background-color: #3a3a3a;
+  border-color: -st-accent-color;
+  box-shadow: inset 0 0 0 1px -st-accent-color;
+}
+
+.theme-gtk .clipboard-item-header { border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+.theme-gtk .clipboard-item-title { color: #e0e0e0; }
+.theme-gtk .clipboard-item-type-badge { color: rgba(255, 255, 255, 0.75); background-color: rgba(255, 255, 255, 0.12); }
+.theme-gtk .clipboard-item-pinned-indicator { color: -st-accent-color; }
+
+.theme-gtk .clipboard-item-header-button {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.06);
+}
+.theme-gtk .clipboard-item-header-button:hover,
+.theme-gtk .clipboard-item-header-button:focus { background-color: rgba(255, 255, 255, 0.18); }
+.theme-gtk .clipboard-item-header-button:active { background-color: rgba(255, 255, 255, 0.28); }
+
+.theme-gtk .text-item-content { color: #f0f0f0; }
+.theme-gtk .code-item-content { color: #e8e8e8; }
+.theme-gtk .file-item-file { color: #d0d0d0; }
+.theme-gtk .link-title { color: #ffffff; }
+.theme-gtk .link-description { color: #aaaaaa; }
+.theme-gtk .link-url { color: -st-accent-color; }
+
+.theme-gtk .clipboard-item-badge {
+  color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(30, 30, 30, 0.80);
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
+.theme-gtk .status-item-title { color: #ffffff; }
+.theme-gtk .status-item-description { color: #999999; }
+
+/* Menu (elemento + filtro ricerca): popover libadwaita scuro */
+.theme-gtk.copious-menu .popup-menu-content {
+  background-color: #383838;
+  border-color: rgba(255, 255, 255, 0.10);
+  color: #ffffff;
+}
+.theme-gtk.copious-menu .popup-menu-item:hover,
+.theme-gtk.copious-menu .popup-menu-item:focus,
+.theme-gtk.copious-menu .popup-menu-item:active { background-color: rgba(255, 255, 255, 0.10); color: #ffffff; }
+.theme-gtk.copious-menu .popup-menu-item:disabled { color: rgba(255, 255, 255, 0.4); }
+.theme-gtk.copious-menu .popup-separator-menu-item .separator,
+.theme-gtk.copious-menu .popup-separator-menu-item-separator,
+.theme-gtk.copious-menu .popup-separator-menu-item { background-color: rgba(255, 255, 255, 0.10); }
+.theme-gtk.copious-menu .tags-item .tag-button:checked { border-color: #ffffff; }
+.theme-gtk.copious-menu .tags-item .tag-button:focus { border-color: -st-accent-color; }

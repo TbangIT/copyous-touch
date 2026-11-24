@@ -1,0 +1,15 @@
+{
+  "name": "Copious Touch",
+  "description": "Ultra-lightweight, high-performance & touch-ready clipboard history manager for GNOME.",
+  "gettext-domain": "copious-touch@tbang",
+  "settings-schema": "org.gnome.shell.extensions.copious-touch",
+  "shell-version": [
+    "48",
+    "49",
+    "50",
+    "51"
+  ],
+  "uuid": "copious-touch@tbang",
+  "version": 1,
+  "version-name": "1.0.0"
+}

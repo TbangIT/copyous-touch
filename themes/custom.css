@@ -1,0 +1,103 @@
+/* Tema "Personalizzato": superfici traslucide scure (ottimo con Blur my Shell).
+ * Stessa palette del vecchio tema "Trasparente", ora applicata anche a menu e sottomenu. */
+
+.theme-custom.clipboard-dialog {
+  background-color: rgba(24, 27, 25, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+/* Pulsanti header/footer */
+.theme-custom .dialog-header-icon-button,
+.theme-custom .dialog-footer-icon-button {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.theme-custom .dialog-header-icon-button:hover,
+.theme-custom .dialog-footer-icon-button:hover { background-color: rgba(255, 255, 255, 0.16); border-color: rgba(255, 255, 255, 0.16); }
+.theme-custom .dialog-header-icon-button:active,
+.theme-custom .dialog-footer-icon-button:active { background-color: rgba(255, 255, 255, 0.26); }
+.theme-custom .dialog-header-icon-button:focus,
+.theme-custom .dialog-footer-icon-button:focus { border-color: -st-accent-color; }
+.theme-custom .dialog-header-icon-button:checked,
+.theme-custom .dialog-footer-icon-button:checked {
+  background-color: -st-accent-color;
+  border-color: -st-accent-color;
+}
+
+/* Ricerca */
+.theme-custom .clipboard-search-entry {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.12);
+  selection-background-color: -st-accent-color;
+  selected-color: #ffffff;
+}
+.theme-custom .clipboard-search-entry:focus {
+  border-color: -st-accent-color;
+  box-shadow: inset 0 0 0 1px -st-accent-color;
+}
+.theme-custom .clipboard-search-entry .search-entry-button { color: #ffffff; background-color: rgba(255, 255, 255, 0.08); }
+.theme-custom .clipboard-search-entry .search-entry-button:hover { background-color: rgba(255, 255, 255, 0.16); }
+.theme-custom .clipboard-search-entry .search-entry-button:active { background-color: rgba(255, 255, 255, 0.24); }
+.theme-custom .clipboard-search-entry .search-entry-button:checked { background-color: -st-accent-color; }
+
+/* Schede */
+.theme-custom .clipboard-item {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.theme-custom .clipboard-item:hover { background-color: rgba(255, 255, 255, 0.13); border-color: rgba(255, 255, 255, 0.18); }
+.theme-custom .clipboard-item:focus {
+  background-color: rgba(255, 255, 255, 0.13);
+  border-color: -st-accent-color;
+  box-shadow: inset 0 0 0 1px -st-accent-color;
+}
+
+.theme-custom .clipboard-item-header { border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+.theme-custom .clipboard-item-title { color: #e0e0e0; }
+.theme-custom .clipboard-item-type-badge { color: rgba(255, 255, 255, 0.75); background-color: rgba(255, 255, 255, 0.12); }
+.theme-custom .clipboard-item-pinned-indicator { color: -st-accent-color; }
+
+.theme-custom .clipboard-item-header-button {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.theme-custom .clipboard-item-header-button:hover,
+.theme-custom .clipboard-item-header-button:focus { background-color: rgba(255, 255, 255, 0.18); border-color: rgba(255, 255, 255, 0.20); }
+.theme-custom .clipboard-item-header-button:active { background-color: rgba(255, 255, 255, 0.28); }
+
+.theme-custom .text-item-content { color: #f0f0f0; }
+.theme-custom .code-item-content { color: #e8e8e8; }
+.theme-custom .file-item-file { color: #d0d0d0; }
+.theme-custom .link-title { color: #ffffff; }
+.theme-custom .link-description { color: #aaaaaa; }
+.theme-custom .link-url { color: -st-accent-color; }
+
+.theme-custom .clipboard-item-badge {
+  color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(18, 20, 18, 0.72);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.theme-custom .status-item-title { color: #ffffff; }
+.theme-custom .status-item-description { color: #999999; }
+
+/* Menu (elemento + filtro ricerca + sottomenu): stesso linguaggio traslucido del cassetto */
+.theme-custom.copious-menu .popup-menu-content {
+  background-color: rgba(28, 31, 29, 0.90);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+.theme-custom.copious-menu .popup-menu-item:hover,
+.theme-custom.copious-menu .popup-menu-item:focus,
+.theme-custom.copious-menu .popup-menu-item:active { background-color: rgba(255, 255, 255, 0.12); color: #ffffff; }
+.theme-custom.copious-menu .popup-menu-item:disabled { color: rgba(255, 255, 255, 0.4); }
+.theme-custom.copious-menu .popup-separator-menu-item .separator,
+.theme-custom.copious-menu .popup-separator-menu-item-separator,
+.theme-custom.copious-menu .popup-separator-menu-item { background-color: rgba(255, 255, 255, 0.10); }
+.theme-custom.copious-menu .tags-item .tag-button:checked { border-color: #ffffff; }
+.theme-custom.copious-menu .tags-item .tag-button:focus { border-color: -st-accent-color; }
